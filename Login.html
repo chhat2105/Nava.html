@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f8f5;
+        }
+        
+
+        .container {
+            display: flex;
+            width: 70%;
+            max-width: 1000px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .left-section {
+            flex: 1;
+            background: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: #f0e8e2;
+            padding: 50px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .right-section h2 {
+            margin: 0 0 20px;
+            font-size: 28px;
+            color: #4e4c4c;
+        }
+
+        .right-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-section input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .right-section button {
+            padding: 10px;
+            background-color: #ae8b69;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .right-section button:hover {
+            background-color: #946e4f;
+        }
+
+        .right-section a {
+            font-size: 14px;
+            color: #4e4c4c;
+            text-decoration: none;
+        }
+
+        .right-section .options {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .right-section input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .input:focus+label{
+            transform: translateY(-25px);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <!-- Replace with an image URL -->
+            <img src="login.jpg" alt="" style="width: 300px; height: 400px;">
+        <div class="right-section">
+            <h2>Welcome Back!</h2>
+            <p>Don't have an account yet? <a href="#">Sign Up</a></p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="keep-logged-in"> Keep me logged in
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
