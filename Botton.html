@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Submit</title>
 </head>
+<style>
+    .container-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f8f5;
+    }
+    input{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+</style>
 <body>
-    <div class="container-btn">
-       <input type="text">Inter Your Email</input><br>
-       <input type="text">Inter your Password
-      
-    </div>
+    <h2>សូមអនុវត្តតាមវិធីដូចខាងក្រោម ៖</h2>
+<p>អ្នកតត្រូវបញ្ចូលព័ត័មានដែលបានណែនាំដូចខាងក្រោម:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>នេះដើម្បីបញ្ជាក់ថាអ្នកបានវឲប្រើប្រសេវាកម្មរបស់យើង.</p>
+
     
 </body>
 </html>
